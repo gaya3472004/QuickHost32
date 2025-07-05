@@ -44,8 +44,18 @@ This project demonstrates how a **standalone embedded device** can act as a full
 1.**Clone this repository**
    
 2.**Navigate to the project directory and build using ESP-IDF**
-    ```bash
-    idf.py build
-3.**Flash the code to your ESP32**
+- idf.py build   
+
+3.**Flash the code to your ESP32.Here port is the USB that you are using .ex:COM7**
+- idf.py -p <port> flash
+
+4.**Monitor the serial output.Here port is the USB that you are using .ex:COM7**
+- idf.py -p <port> monitor
+
+5.**Connect to the ESP32 Wi-Fi hotspot**
+- Use the SSID and password configured in your softAP settings.
+
+6.**Access the hosted webpage**
+- Use the IP address shown in the serial monitor output (Ex:192.168.1.123).Open your browser , use your IP as  : http://192.168.1.123
 
 
